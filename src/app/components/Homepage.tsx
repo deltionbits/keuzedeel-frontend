@@ -38,10 +38,11 @@ const Homepage = () => {
                         <h1 className="-m-2 font-bold text-xl">Game informatie: God of War</h1>
                     </div>
                     <p className="m-1 pl-3">
-                        In God of War, players control Kratos, a Spartan warrior who is
-                        sent by the Greek gods to kill Ares, the god of war. As the story progresses,
-                        Kratos is revealed to be Ares' former servant, who had been tricked into
-                        killing his own family and is haunted by terrible nightmares.</p>
+                    In God of War besturen spelers Kratos, een Spartaanse krijger die door de 
+                    Griekse goden is gestuurd om Ares, de god van de oorlog, te doden. Naarmate 
+                    het verhaal vordert, blijkt dat Kratos de voormalige dienaar van Ares is, 
+                    die was misleid om zijn eigen familie te vermoorden en wordt achtervolgd 
+                    door vreselijke nachtmerries.</p>
                 </div>
 
                 <div className="col-span-1 flex flex-col justify-center items-center text-center">
