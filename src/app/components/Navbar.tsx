@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="bg-gradient-to-b from-red-100/50  to-white row-start-1 flex items-center justify-between mt-1 pl-4 pr-4 pb-8 pt-5 -m-4 -mt-[16px] rounded-xl">
+    <nav className="bg-gradient-to-b from-red-100/50  to-white row-start-1 flex items-center justify-between mt-1 pl-4 pr-4 pb-8 pt-5 -m-4 mt-[-15px] rounded-xl">
       <div>
         <a className="text-black font-bold py-2 px-4 hover:text-red-400 transition-colors duration-200 ease-in-out flex items-center" href="/">
           <img src="box.svg" alt="Boxed logo" className="h-6 w-6 mr-2" />
