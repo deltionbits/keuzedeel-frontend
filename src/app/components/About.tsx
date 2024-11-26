@@ -1,69 +1,36 @@
 import React from "react";
 
-const games = [
-    { id: 1, title: "Game 1", image: "/gow.jpg" },
-    { id: 2, title: "Game 2", image: "/gow.jpg" },
-    { id: 3, title: "Game 3", image: "/gow.jpg" },
-];
-
 const About = () => {
     return (
         <>
-            <div className="min-h-[79vh] bg-white py-12 px-4">
-                
-                <div className="max-w-7xl mx-auto">
-                    <div className="text-center mb-12">
-                        <h1 className="text-5xl font-bold text-gray-900 mb-4">Contact</h1>
-                        <p className="text-xl text-gray-600">If you have any questions, contact us using the form below.</p>
+            <div className="flex flex-col items-center justify-center min-h-screen">
+                <h1 className="text-4xl font-bold text-gray-800 mb-4">Boxed Games.</h1>
+                <p className="text-lg text-gray-600 mb-8">
+                    Welkom!
+                </p>
+                <div className="space-y-4">
+                    <div className="bg-white p-6 rounded-lg shadow-sm">
+                        <h2 className="text-2xl font-semibold text-gray-800">Our Mission</h2>
+                        <p className="text-gray-600 mt-2">
+                            Informatie 1
+                        </p>
+                    </div>
+                    <div className="bg-white p-6 rounded-lg shadow-sm">
+                        <h2 className="text-2xl font-semibold text-gray-800">Our Vision</h2>
+                        <p className="text-gray-600 mt-2">
+                            Informatie 2
+                        </p>
                     </div>
                 </div>
-
-                <div className="max-w-7xl mx-auto">
-                    <form className="bg-white shadow-md rounded-[60px] px-8 pt-6 pb-8 mb-4">
-                        <div className="mb-4">
-                            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
-                                Name
-                            </label>
-                            <input
-                                className="shadow appearance-none border rounded-xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                id="name"
-                                type="text"
-                                placeholder="Your name"
-                            />
+                <div>
+                    <h2 className="text-2xl font-semibold text-gray-800 mt-8">Ons Team</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                        <div className="bg-white p-6 rounded-lg shadow-sm">
+                            <h3 className="text-xl font-semibold text-gray-800">Persoon</h3>
+                            <p className="text-gray-600 mt-2">CEO</p>
                         </div>
-                        <div className="mb-4">
-                            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
-                                Email
-                            </label>
-                            <input
-                                className="shadow appearance-none border rounded-xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                id="email"
-                                type="email"
-                                placeholder="Your email"
-                            />
-                        </div>
-                        <div className="mb-6">
-                            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="message">
-                                Message
-                            </label>
-                            <textarea
-                                className="shadow appearance-none border rounded-xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                id="message"
-                                placeholder="Your message"
-                                rows={5}
-                            />
-                        </div>
-                        <div className="flex items-center justify-between">
-                            <button
-                                className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline"
-                                type="button"
-                            >
-                                Send
-                            </button>
-                        </div>
-                    </form>
+                    </div>
                 </div>
-
             </div>
         </>
     );
