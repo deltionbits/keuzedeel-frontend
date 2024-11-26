@@ -22,28 +22,28 @@ const Cart = () => {
                     <div className="col-span-2 font-bold border-r border-b border-red-500 text-center flex items-center justify-center text-xl">Product</div>
                     <div className="col-span-2 col-start-1 row-start-2">
                         <div className="grid grid-cols-2 grid-rows-2">
-                            <Image src="gow.jpg" alt="Game Foto" className="row-span-2" />
+                            <Image src="gow.jpg" width={12} height={12} alt="Game Foto" className="row-span-2" />
                             <div className="pl-3 font-bold">God of War</div>
                             <div className="pl-3 col-start-2 row-start-2 italic">Game</div>
                         </div>
                     </div>
                     <div className="col-span-2 col-start-1 row-start-3">
                     <div className="grid grid-cols-2 grid-rows-2">
-                            <Image src="gow.jpg" alt="Game Foto" className="row-span-2" />
+                            <Image src="gow.jpg" width={12} height={12} alt="Game Foto" className="row-span-2" />
                             <div className="pl-3 font-bold">God of War</div>
                             <div className="pl-3 col-start-2 row-start-2 italic">Game</div>
                         </div>
                     </div>
                     <div className="col-span-2 col-start-1 row-start-4">
                     <div className="grid grid-cols-2 grid-rows-2">
-                            <Image src="gow.jpg" alt="Game Foto" className="row-span-2" />
+                            <Image src="gow.jpg" width={12} height={12} alt="Game Foto" className="row-span-2" />
                             <div className="pl-3 font-bold">God of War</div>
                             <div className="pl-3 col-start-2 row-start-2 italic">Game</div>
                         </div>
                     </div>
                     <div className="col-span-2 col-start-1 row-start-5">
                     <div className="grid grid-cols-2 grid-rows-2">
-                            <Image src="gow.jpg" alt="Game Foto" className="row-span-2" />
+                            <Image src="gow.jpg" width={12} height={12} alt="Game Foto" className="row-span-2" />
                             <div className="pl-3 font-bold">God of War</div>
                             <div className="pl-3 col-start-2 row-start-2 italic">Game</div>
                         </div>

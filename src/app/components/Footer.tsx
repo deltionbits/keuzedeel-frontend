@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="grid grid-cols-4 grid-rows-1 gap-4 w-full">
                 <Link href="/">
                     <div className="col-span-1 flex justify-center items-center">
-                        <Image src="/box.svg" alt="Boxed logo" className="h-12" />
+                        <Image src="/box.svg" width={12} height={12} alt="Boxed logo" className="h-12" />
                         <p className="font-bold pl-2">Boxed Games</p>
                     </div>
                 </Link>

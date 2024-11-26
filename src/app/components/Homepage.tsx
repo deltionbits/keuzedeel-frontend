@@ -17,6 +17,7 @@ const Homepage = () => {
                 <div className="md:col-span-2 relative aspect-video">
                     <Image
                         src="/gow.jpg"
+                        width={1200} height={1200}
                         alt="Game cover or main visual"
                         className="absolute inset-0 w-full h-full object-cover rounded-xl shadow-lg"
                     />
@@ -44,7 +45,7 @@ const Homepage = () => {
             <div className="flex-grow container mx-auto px-4 py-8 grid md:grid-cols-3 gap-6">
                 <div className="flex flex-col col-span-2">
                     <div className="flex items-center">
-                        <Image src="chev-right.svg" alt="" className="h-6 w-6 mr-2" />
+                        <Image src="chev-right.svg" alt="" className="h-6 w-6 mr-2" width={1200} height={12} />
                         <h1 className="-m-2 font-bold text-xl">Game informatie: {gameInfo[0].title}</h1>
                     </div>
                     <p className="m-1 pl-3">

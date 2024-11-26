@@ -25,6 +25,7 @@ const Upcoming = () => {
                             >
                                 <div className="p-4">
                                     <Image
+                                    width={12} height={12}
                                         src={game.image}
                                         alt={game.title}
                                         className="w-full h-80 object-cover rounded-lg"
