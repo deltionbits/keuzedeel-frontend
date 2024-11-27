@@ -65,7 +65,7 @@ const Upcoming = () => {
                     <h3 className="text-2xl font-semibold text-gray-800 mt-4 text-center">
                       {game.title}
                     </h3>
-                    <h4 className="text-xl font-bold text-gray-600 text-center">
+                    <h4 className="text-xl font-bold text-red-500 text-center">
                       {game.type}
                     </h4>
                   </div>
