@@ -2,9 +2,9 @@ import React from "react";
 import Image from "next/image";
 
 const games = [
-    { id: 1, title: "Game 1", image: "/gow.jpg" },
-    { id: 2, title: "Game 2", image: "/gow.jpg" },
-    { id: 3, title: "Game 3", image: "/gow.jpg" },
+    { id: 1, title: "League of Legends", image: "/lol.jpg" },
+    { id: 2, title: "Valorant", image: "/valo.jpg" },
+    { id: 3, title: "Rainbow 6: Siege", image: "/r6s.jpg" },
 ];
 
 const GamePage = () => {
@@ -14,7 +14,7 @@ const GamePage = () => {
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center mb-12">
                         <h1 className="text-5xl font-bold text-gray-900 mb-4">Game Page</h1>
-                        <p className="text-xl text-gray-600">Discover our featured games!</p>
+                        <p className="text-xl text-gray-600">Ontdek onze game selectie!</p>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -25,7 +25,7 @@ const GamePage = () => {
                             >
                                 <div className="p-4">
                                     <Image
-                                        width={12} height={12}
+                                        width={1200} height={1200}
                                         src={game.image}
                                         alt={game.title}
                                         className="w-full h-80 object-cover rounded-lg"
