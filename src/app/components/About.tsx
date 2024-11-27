@@ -23,7 +23,7 @@ const About = () => {
                 <p className="text-lg text-gray-600 mb-8">
                     {aboutContent.welcomeText}
                 </p>
-                <div className="space-y-4">
+                <div className="space-y-4 max-w-[50vw]">
                     <div className="bg-white p-6">
                         <h2 className="text-2xl font-semibold text-red-500 text-3xl text-center">{aboutContent.mission.title}</h2>
                         <p className="text-gray-600 mt-2 text-center text-xl">

@@ -21,7 +21,7 @@ const games = [
       type: "Game",
       description: "Populair tactisch first-person shooter spel",
       ArticleType: "Release",
-      ReleaseDate: "2025-12-31",
+      UpdateText: "2025-12-31",
       fullDetails: "Valorant is een tactische first-person shooter (FPS) die teamgebaseerd is, waarbij elke speler de rol van een agent met unieke vaardigheden op zich neemt. Het doel is om te strijden tegen de tegenstander in verschillende spelmodi en strategisch te winnen.",
       Price: "Free to play"
     },

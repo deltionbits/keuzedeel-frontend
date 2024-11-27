@@ -16,9 +16,9 @@ export default function GameDetails() {
         return (
             <div className="min-h-[75vh]">
                 <div className="pt-[20vh] text-center">
-                    <h1 className="text-4xl font-bold text-gray-800 mb-4">Game Not Found</h1>
+                    <h1 className="text-4xl font-bold text-gray-800 mb-4">Game niet gevonden</h1>
                     <a href="/games" className="text-blue-600 hover:underline">
-                        Back to Games
+                        Terug naar Games
                     </a>
                 </div>
             </div>
@@ -42,7 +42,7 @@ export default function GameDetails() {
                         <h2 className="text-2xl text-red-500 mb-4">{game.type}</h2>
                         <p className="text-lg text-gray-600 mb-6">{game.description}</p>
                         <div className="bg-gray-100 p-6 rounded-xl">
-                            <h3 className="text-xl font-semibold text-gray-800 mb-4">Full Details</h3>
+                            <h3 className="text-xl font-semibold text-gray-800 mb-4">Game details</h3>
                             <p className="text-gray-700">{game.fullDetails}</p>
                         </div>
                         <div className="mt-5 bg-gray-100 p-6 rounded-xl">
