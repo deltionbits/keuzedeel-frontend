@@ -8,32 +8,33 @@ const games = [
     title: "Valorant", 
     image: "/valo.jpg", 
     type: "Update",
-    description: "Tactical shooter with unique agent abilities",
+    description: "Tactische shooter met unieke agent vaardigheden",
     ArticleType: "Update",
-    UpdateText: "New agent and map!",
-    fullDetails: "Valorant is a team-based tactical shooter where players choose unique agents with special abilities. Developed by Riot Games, it combines precise gunplay with strategic character skills."
+    UpdateText: "Nieuwe agent en map!",
+    fullDetails: "Valorant is een op team gebaseerde tactische shooter waar spelers unieke agenten kiezen met speciale vaardigheden. Ontwikkeld door Riot Games, combineert het precieze schietwerk met strategische karaktervaardigheden."
   },
   { 
     id: 2, 
     title: "God of War: Ragnarok 2", 
     image: "/gow.jpg", 
     type: "Release",
-    description: "Epic Norse mythology action-adventure",
+    description: "Episch actie-avontuur in de Noorse mythologie",
     ArticleType: "Release",
     UpdateText: "2025-12-31",
-    fullDetails: "God of War: Ragnarok continues the story of Kratos and Atreus in the Norse mythology setting. Players explore stunning landscapes and engage in intense combat."
+    fullDetails: "God of War: Ragnarok vervolgt het verhaal van Kratos en Atreus in de setting van de Noorse mythologie. Spelers verkennen adembenemende landschappen en gaan de strijd aan in intensieve gevechten."
   },
   { 
     id: 3, 
     title: "League of Legends", 
     image: "/lol.jpg", 
     type: "Update",
-    description: "Popular multiplayer online battle arena game",
+    description: "Populair multiplayer online battle arena spel",
     ArticleType: "Update",
-    UpdateText: "New champion and balance changes!",
-    fullDetails: "League of Legends is a competitive multiplayer online battle arena (MOBA) where teams of champions battle to destroy the opponent's base."
+    UpdateText: "Nieuwe kampioen en balanswijzigingen!",
+    fullDetails: "League of Legends is een competitieve multiplayer online battle arena (MOBA) waar teams van kampioenen strijden om de basis van de tegenstander te vernietigen."
   },
 ];
+
 
 const Upcoming = () => {
   return (

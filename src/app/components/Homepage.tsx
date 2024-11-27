@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const gameInfo = [
     {
-        title: "God of War",
-        description: "In God of War besturen spelers Kratos, een Spartaanse krijger die door de Griekse goden is gestuurd om Ares, de god van de oorlog, te doden. Naarmate het verhaal vordert, blijkt dat Kratos de voormalige dienaar van Ares is, die was misleid om zijn eigen familie te vermoorden en wordt achtervolgd door vreselijke nachtmerries."
+        title: "League of Legends",
+        description: "In League of Legends speel je een zogenaamde 'champion' die je moet levelen en uitrusten met items. Het doel van het spel is om de basis van de tegenstander te vernietigen. Dit doe je door de basis te verdedigen en de basis van de tegenstander aan te vallen. Het spel is gratis te spelen en wordt regelmatig geüpdatet met nieuwe champions en items."
     }
 ];
 
