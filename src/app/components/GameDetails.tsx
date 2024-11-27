@@ -33,21 +33,25 @@ export default function GameDetails() {
                         <img
                             src={game.image}
                             alt={game.title}
-                            className="w-full h-96 object-cover rounded-xl shadow-lg"
+                            className="w-full h-full object-cover rounded-xl shadow-lg"
                         />
                     </div>
 
                     <div>
                         <h1 className="text-4xl font-bold text-gray-900 mb-4">{game.title}</h1>
-                        <h2 className="text-2xl text-gray-700 mb-4">{game.type}</h2>
+                        <h2 className="text-2xl text-red-500 mb-4">{game.type}</h2>
                         <p className="text-lg text-gray-600 mb-6">{game.description}</p>
                         <div className="bg-gray-100 p-6 rounded-xl">
                             <h3 className="text-xl font-semibold text-gray-800 mb-4">Full Details</h3>
                             <p className="text-gray-700">{game.fullDetails}</p>
                         </div>
+                        <div className="mt-5 bg-gray-100 p-6 rounded-xl">
+                            <h3 className="text-xl font-semibold text-gray-800 mb-4">{game.ArticleType}</h3>
+                            <p className="text-gray-700">{game.UpdateText}</p>
+                        </div>
                         <div>
                             <Link href="/upcoming" className="block mt-6">
-                                <p className="text-red-500 text-xl hover:underline">Back to Upcoming</p>
+                                <p className="text-red-500 text-xl hover:underline font-bold">Back to Upcoming</p>
                             </Link>
                         </div>
                     </div>
