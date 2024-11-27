@@ -40,7 +40,7 @@ const Navbar = () => {
         <li>
           <Link className="bg-red-500 text-white font-bold py-2 px-4 rounded hover:bg-red-400 transition-colors duration-200 ease-in-out flex items-center" href="/cart">
             <Image src="shoppingcart.svg" width={12} height={12} alt="" className="h-6 w-6 mr-2 filter invert" />
-            Cart
+            Winkelwagen
           </Link>
         </li>
       </ol>
