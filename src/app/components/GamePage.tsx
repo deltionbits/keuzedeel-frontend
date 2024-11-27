@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const games = [
     { id: 1, title: "Game 1", image: "/gow.jpg" },
@@ -23,7 +24,8 @@ const GamePage = () => {
                                 className="bg-white rounded-xl shadow-xl shadow-red-300/20 overflow-hidden transition-transform hover:scale-105"
                             >
                                 <div className="p-4">
-                                    <img
+                                    <Image
+                                        width={12} height={12}
                                         src={game.image}
                                         alt={game.title}
                                         className="w-full h-80 object-cover rounded-lg"
