@@ -16,29 +16,33 @@ const Homepage = () => {
             <main className="flex-grow container mx-auto px-4 py-8 grid md:grid-cols-3 gap-6">
                 <div className="md:col-span-2 relative aspect-video">
                     <Image
-                        src="/gow.jpg"
+                        src="/lol.jpg"
                         width={1200} height={1200}
                         alt="Game cover or main visual"
                         className="absolute inset-0 w-full h-full object-cover rounded-xl shadow-lg"
                     />
                 </div>
                 <div className="md:col-span-1 flex flex-col justify-center items-center text-center">
-                    <h1 className="text-3xl font-bold text-red-500 mb-4">Topics</h1>
-                    <p className="font-semibold text-gray-600 hover:text-red-400 hover:underline transition-colors duration-200 ease-in-out">
-                        God of War
-                    </p>
-                    <p className="font-semibold text-gray-600 hover:text-red-400 hover:underline transition-colors duration-200 ease-in-out">
-                        Game 2
-                    </p>
-                    <p className="font-semibold text-gray-600 hover:text-red-400 hover:underline transition-colors duration-200 ease-in-out">
-                        Nog een game
-                    </p>
-                    <p className="font-semibold text-gray-600 hover:text-red-400 hover:underline transition-colors duration-200 ease-in-out">
-                        Coole game
-                    </p>
-                    <p className="font-semibold text-gray-600 hover:text-red-400 hover:underline transition-colors duration-200 ease-in-out">
-                        Releases
-                    </p>
+                    <div className="flex flex-col space-y-4">
+                        <div className="grid grid-cols-1 grid-rows-1 gap-4">
+                            <div>
+                            <Image
+                            src="/r6s.jpg"
+                            width={1200} height={1200}
+                            alt="Game cover or main visual"
+                            className="rounded-xl shadow-lg"
+                        />
+                            </div>
+                            <div className="row-start-2">
+                            <Image
+                            src="/valo.jpg"
+                            width={1200} height={1200}
+                            alt="Game cover or main visual"
+                            className="rounded-xl shadow-lg"
+                        />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </main>
 
@@ -56,9 +60,9 @@ const Homepage = () => {
                 <div className="col-span-1 flex flex-col justify-center items-center text-center">
                     <h1 className="text-2xl font-bold mb-4">Externe links</h1>
                     <ul className="list-disc list-inside list-none">
-                        <li><Link href="#" className="text-blue-500">Game  </Link></li>
-                        <li><Link href="#" className="text-blue-500">link 2</Link></li>
-                        <li><Link href="#" className="text-blue-500">link 3</Link></li>
+                        <li><Link href="https://www.ign.com/wikis" target="_blank" className="text-blue-500">IGN Guides</Link></li>
+                        <li><Link href="https://www.metacritic.com/game/" target="_blank" className="text-blue-500">MetaCritic</Link></li>
+                        <li><Link href="https://www.gamespot.com/" target="_blank" className="text-blue-500">Gamespot</Link></li>
                     </ul>
                 </div>
             </div>
