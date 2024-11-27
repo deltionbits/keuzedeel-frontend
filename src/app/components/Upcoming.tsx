@@ -9,14 +9,18 @@ const games = [
     image: "/valo.jpg", 
     type: "Update",
     description: "Tactical shooter with unique agent abilities",
+    ArticleType: "Update",
+    UpdateText: "New agent and map!",
     fullDetails: "Valorant is a team-based tactical shooter where players choose unique agents with special abilities. Developed by Riot Games, it combines precise gunplay with strategic character skills."
   },
   { 
     id: 2, 
-    title: "God of War: Ragnarok", 
+    title: "God of War: Ragnarok 2", 
     image: "/gow.jpg", 
     type: "Release",
     description: "Epic Norse mythology action-adventure",
+    ArticleType: "Release",
+    ReleaseDate: "2025-12-31",
     fullDetails: "God of War: Ragnarok continues the story of Kratos and Atreus in the Norse mythology setting. Players explore stunning landscapes and engage in intense combat."
   },
   { 
@@ -25,6 +29,8 @@ const games = [
     image: "/lol.jpg", 
     type: "Update",
     description: "Popular multiplayer online battle arena game",
+    ArticleType: "Update",
+    UpdateText: "New champion and balance changes!",
     fullDetails: "League of Legends is a competitive multiplayer online battle arena (MOBA) where teams of champions battle to destroy the opponent's base."
   },
 ];
