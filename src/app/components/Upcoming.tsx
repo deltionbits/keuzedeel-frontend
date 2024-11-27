@@ -20,7 +20,7 @@ const games = [
     type: "Release",
     description: "Epic Norse mythology action-adventure",
     ArticleType: "Release",
-    ReleaseDate: "2025-12-31",
+    UpdateText: "2025-12-31",
     fullDetails: "God of War: Ragnarok continues the story of Kratos and Atreus in the Norse mythology setting. Players explore stunning landscapes and engage in intense combat."
   },
   { 
@@ -47,7 +47,7 @@ const Upcoming = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {games.map((game) => (
               <Link 
-                href={`/games/${game.id}`} 
+                href={`/upcoming/${game.id}`} 
                 key={game.id}
                 className="block"
               >

@@ -3,7 +3,7 @@
 import { usePathname, useRouter } from 'next/navigation';
 import Link from 'next/link';
 
-import { games } from './GamePage'
+import { games } from './Upcoming'
 
 export default function GameDetails() {
     const pathname = usePathname();
@@ -17,8 +17,8 @@ export default function GameDetails() {
             <div className="min-h-[75vh]">
                 <div className="pt-[20vh] text-center">
                     <h1 className="text-4xl font-bold text-gray-800 mb-4">Game Not Found</h1>
-                    <a href="/games" className="text-blue-600 hover:underline">
-                        Back to Games
+                    <a href="/Upcoming" className="text-blue-600 hover:underline">
+                        Back to Upcoming
                     </a>
                 </div>
             </div>
@@ -48,11 +48,10 @@ export default function GameDetails() {
                         <div className="mt-5 bg-gray-100 p-6 rounded-xl">
                             <h3 className="text-xl font-semibold text-gray-800 mb-4">{game.ArticleType}</h3>
                             <p className="text-gray-700">{game.UpdateText}</p>
-                            <p className='text-gray-700 pt-5'>Dit spel is <span className='text-red-500 text-bold'>{game.Price}</span></p>
                         </div>
                         <div>
-                            <Link href="/games" className="block mt-6">
-                                <p className="text-red-500 text-xl hover:underline font-bold">Back to Games</p>
+                            <Link href="/upcoming" className="block mt-6">
+                                <p className="text-red-500 text-xl hover:underline font-bold">Back to Upcoming</p>
                             </Link>
                         </div>
                     </div>
