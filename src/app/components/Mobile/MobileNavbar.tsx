@@ -24,13 +24,13 @@ const MobileNavbar = () => {
                 <nav className="bg-gradient-to-b from-red-100/50 to-white p-4 rounded-xl">
                     <ol className="flex flex-col gap-4">
                         <li>
-                            <Link className="bg-red-500 text-white font-bold py-2 px-4 rounded hover:bg-red-400 transition-colors duration-200 ease-in-out flex items-center" href="/games">
+                            <Link className="bg-red-500 text-white font-bold py-2 px-4 rounded hover:bg-red-400 transition-colors duration-200 ease-in-out flex items-center" href="/current-games">
                                 <Image src="flame.svg" width={12} height={12} alt="" className="h-6 w-6 mr-2 filter invert" />
                                 Games
                             </Link>
                         </li>
                         <li>
-                            <Link className="bg-red-500 text-white font-bold py-2 px-4 rounded hover:bg-red-400 transition-colors duration-200 ease-in-out flex items-center" href="/upcoming">
+                            <Link className="bg-red-500 text-white font-bold py-2 px-4 rounded hover:bg-red-400 transition-colors duration-200 ease-in-out flex items-center" href="/upcoming-games">
                                 <Image src="megaphone.svg" width={12} height={12} alt="" className="h-6 w-6 mr-2 filter invert" />
                                 Upcoming
                             </Link>
