@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 
 const Footer = () => {
@@ -28,11 +27,11 @@ const Footer = () => {
                                 <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-message">
                                     Bericht
                                 </label>
-                                <textarea className="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-message" rows="5" placeholder="Je bericht..."></textarea>
+                                <textarea className="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-message" rows={5} placeholder="Je bericht"></textarea>
                             </div>
                         </div>
                         <div className="flex items-center justify-between">
-                            <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                            <button className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
                                 Verzenden
                             </button>
                         </div>
