@@ -2,21 +2,21 @@
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
-import { games } from './Upcoming'
+import { games } from './GamePage'
 
 export default function GameDetails() {
-    const pathname = usePathname()
-    const gameName = pathname.split('/').pop();
-    const game = games.find((game) => game.link === gameName);  
+  const pathname = usePathname()
+  const gameName = pathname.split('/').pop();
+  const game = games.find((game) => game.link === gameName);
   
-    if (!game) {
-      return (
-        <div>
-          Game niet gevonden
-          <Link href="/upcoming-games">Terug naar Upcoming Games</Link>
-        </div>
-      );
-    }
+  if (!game) {
+    return (
+      <div>
+        Game niet gevonden
+        <Link href="/upcoming-games">Terug naar Upcoming Games</Link>
+      </div>
+    );
+  }
 
   return (
     <div className="flex place-content-center">
@@ -44,11 +44,11 @@ export default function GameDetails() {
               <p className="text-gray-700">{game.UpdateText}</p>
             </div>
             <div>
-                <Link href="/current-games" className="block mt-6">
-                  <p className="text-red-500 text-xl hover:underline font-bold">
-                    Terug naar Current Games
-                  </p>
-                </Link>
+              <Link href="/current-games" className="block mt-6">
+                <p className="text-red-500 text-xl hover:underline font-bold">
+                  Terug naar Current Games
+                </p>
+              </Link>
             </div>
           </div>
         </div>

@@ -34,7 +34,6 @@ export const ResponsiveComponent: React.FC<ResponsiveComponentProps> = ({
   return isMobile ? <MobileComponent /> : <DesktopComponent />;
 };
 
-// Specific Navbar component
 export const ResponsiveNavbar = () => (
   <ResponsiveComponent 
     desktopComponent={DesktopNavbar} 
@@ -42,7 +41,6 @@ export const ResponsiveNavbar = () => (
   />
 );
 
-// Specific Footer component
 export const ResponsiveFooter = () => (
   <ResponsiveComponent 
     desktopComponent={DesktopFooter} 
