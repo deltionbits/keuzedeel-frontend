@@ -5,8 +5,9 @@ import Image from "next/image";
 const games = [
     { 
       id: 1, 
-      title: "League of Legends", 
-      image: "/lol.jpg", 
+      title: "League of Legends",
+      link: "league-of-legends", 
+      image: "/lol.webp", 
       type: "Game",
       description: "Populair multiplayer online battle arena spel",
       ArticleType: "Game Informatie",
@@ -16,8 +17,9 @@ const games = [
     },
     { 
       id: 2, 
-      title: "Valorant", 
-      image: "/valo.jpg", 
+      title: "Valorant",
+      link: "valorant",
+      image: "/valo.webp", 
       type: "Game",
       description: "Populair tactisch first-person shooter spel",
       ArticleType: "Release",
@@ -28,7 +30,8 @@ const games = [
     { 
       id: 3, 
       title: "Rainbow Six Siege", 
-      image: "/r6s.jpg", 
+      link: "rainbow-six-siege",
+      image: "/r6s.webp", 
       type: "Game",
       description: "Tactisch team-gebaseerd schietspel",
       ArticleType: "Update",
@@ -51,7 +54,7 @@ const GamePage = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {games.map((game) => (
                             <Link
-                                href={`/games/${game.id}`}
+                                href={`/current-games/${game.link}`}
                                 key={game.id}
                                 className="block"
                             >

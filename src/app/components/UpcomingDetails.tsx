@@ -1,25 +1,25 @@
 "use client";
 
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 
 import { games } from './Upcoming'
 
 export default function GameDetails() {
-    const pathname = usePathname();
-    const router = useRouter();
-    const id = parseInt(pathname.split('/')[2]);
+    const pathname = usePathname()
+    const gameName = pathname.split('/').pop();
+    const game = games.find((game) => game.link === gameName);
 
-    const game = games.find((g) => g.id === id);
 
     if (!game) {
         return (
             <div className="min-h-[75vh]">
                 <div className="pt-[20vh] text-center">
                     <h1 className="text-4xl font-bold text-gray-800 mb-4">Game niet gevonden</h1>
-                    <a href="/Upcoming" className="text-blue-600 hover:underline">
-                        Terug naar Upcoming
-                    </a>
+                    <Link href="/upcoming-games" className="text-blue-600 hover:underline">
+                        Terug naar Upcoming Games
+                    </Link>
                 </div>
             </div>
         );
@@ -30,10 +30,12 @@ export default function GameDetails() {
             <div className="min-h-[75vh] max-w-[80vw]">
                 <div className="pt-[20vh] grid md:grid-cols-2 gap-8">
                     <div>
-                        <img
+                        <Image
                             src={game.image}
                             alt={game.title}
                             className="w-full h-full object-cover rounded-xl shadow-lg"
+                            width={1200}
+                            height={1200}
                         />
                     </div>
 
@@ -50,8 +52,8 @@ export default function GameDetails() {
                             <p className="text-gray-700">{game.UpdateText}</p>
                         </div>
                         <div>
-                            <Link href="/upcoming" className="block mt-6">
-                                <p className="text-red-500 text-xl hover:underline font-bold">Terug naar Upcoming</p>
+                            <Link href="/upcoming-games" className="block mt-6">
+                                <p className="text-red-500 text-xl hover:underline font-bold">Terug naar Upcoming Games</p>
                             </Link>
                         </div>
                     </div>

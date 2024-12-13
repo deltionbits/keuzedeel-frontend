@@ -6,7 +6,8 @@ const games = [
   { 
     id: 1, 
     title: "Valorant", 
-    image: "/valo.jpg", 
+    link: "valorant",
+    image: "/valo.webp", 
     type: "Update",
     description: "Tactische shooter met unieke agent vaardigheden",
     ArticleType: "Update",
@@ -16,7 +17,8 @@ const games = [
   { 
     id: 2, 
     title: "God of War: Ragnarok 2", 
-    image: "/gow.jpg", 
+    image: "/gow.webp", 
+    link: "god-of-war-ragnarok",
     type: "Release",
     description: "Episch actie-avontuur in de Noorse mythologie",
     ArticleType: "Release",
@@ -26,7 +28,8 @@ const games = [
   { 
     id: 3, 
     title: "League of Legends", 
-    image: "/lol.jpg", 
+    link: "league-of-legends",
+    image: "/lol.webp", 
     type: "Update",
     description: "Populair multiplayer online battle arena spel",
     ArticleType: "Update",
@@ -48,7 +51,7 @@ const Upcoming = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {games.map((game) => (
               <Link 
-                href={`/upcoming/${game.id}`} 
+                href={`/upcoming-games/${game.link}`} 
                 key={game.id}
                 className="block"
               >
